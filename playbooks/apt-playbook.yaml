@@ -1,0 +1,8 @@
+---
+- name: Update-Paketlisten
+  hosts: dein_server
+  become: yes
+  tasks:
+    - name: Führe apt update aus
+      apt:
+        update_cache: yes
