@@ -1,6 +1,6 @@
 ---
 - name: Update-Paketlisten
-  hosts: "{{ myhosts }}"
+  hosts: "all"
   become: yes
   tasks:
     - name: Führe apt update aus
